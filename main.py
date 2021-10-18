@@ -28,15 +28,17 @@ item_dict = {'ant': 1, 'apple': 1, 'boar': 1, 'candy': 1, 'coin': 1,
 
 
 # ping requests need two enter commands
-def ping():
 
+
+def ping():
     for _ in range(2):
         pg.press("enter")
 
 
 # For gifting every item in inventory from dummy account
-def gift_all(dct):
 
+
+def gift_all(dct):
     for item, quantity in dct.items():
         pg.typewrite(f'pls gift {quantity} {item} @Abid')
         ping()
@@ -45,14 +47,17 @@ def gift_all(dct):
 
 # Only 1/3 chance of catching
 # click() -> This is too hopefully catch collectables etc if they appear in mini-game
+
+
 def click():
     pg.click(x=580, y=650)
     time.sleep(2)
 
 
 # gamble_search() -> To click the higher, lower, jackpot and other search item buttons
-def gamble_search(x):
 
+
+def gamble_search(x):
     for i in range(3):
         pg.typewrite(x[i])
         pg.press("enter")
@@ -65,9 +70,8 @@ def gamble_search(x):
 
 
 for j in range(2):
-    # Alarm for you too check if you died. Feel free to disable if you want
-    if j == 1:
-        playsound("ringtone.mp3")
+    if j == 1: 
+        playsound("ringtone.mp3") # => Alarm for you too check if you died. Feel free to disable if you want
 
     for work in works:
         pg.typewrite(work)
@@ -78,7 +82,6 @@ for j in range(2):
 
     for ping in ping_cmnds:
         pg.typewrite(ping)
-        # We press enter twice, once to activate the ping in box and once to send the command
         ping()
         time.sleep(3)
 
