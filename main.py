@@ -1,4 +1,5 @@
 import time
+import random
 import pyautogui as pg
 from playsound import playsound
 
@@ -42,7 +43,7 @@ def gift_all(dct):
     for item, quantity in dct.items():
         pg.typewrite(f'pls gift {quantity} {item} @Abid')
         ping()
-        time.sleep(20)
+        time.sleep(random.randint(18,24))
 
 
 # Only 1/3 chance of catching
@@ -51,7 +52,7 @@ def gift_all(dct):
 
 def click():
     pg.click(x=580, y=650)
-    time.sleep(2)
+    time.sleep(random.randint(2,4))
 
 
 # gamble_search() -> To click the higher, lower, jackpot buttons and other 'pls search' item buttons
@@ -61,9 +62,9 @@ def gamble_search(x):
     for i in range(3):
         pg.typewrite(x[i])
         pg.press("enter")
-        time.sleep(3)
+        time.sleep(random.randint(1,3))
         click()
-        time.sleep(12)
+        time.sleep(random.randint(12,15))
 
 
 # ///======================================================================Program Start Point==============================================================================///
@@ -78,12 +79,12 @@ for j in range(2):
         pg.press("enter")
         time.sleep(3)
         pg.click(x=480, y=675)
-        time.sleep(1)
+        time.sleep(random.randint(1,3))
 
     for ping in ping_cmnds:
         pg.typewrite(ping)
         ping()
-        time.sleep(3)
+        time.sleep(random.randint(1,3))
 
     gamble_search(c_wrk)
 
