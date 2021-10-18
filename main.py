@@ -3,11 +3,11 @@ import pyautogui as pg
 from playsound import playsound
 
 
-# ///=============================================Buffer Time=======================================================///
+# ///=======================================================================Buffer Time=======================================================================================///
 time.sleep(5)
 
 
-# ///===========================================Global Variables====================================================///
+# ///=====================================================================Global Variables====================================================================================///
 
 
 c_wrk = ["pls hl", "pls search", "pls hl"]
@@ -24,7 +24,7 @@ item_dict = {'ant': 1, 'apple': 1, 'boar': 1, 'candy': 1, 'coin': 1,
              }
 
 
-# ///===========================================Global Functions====================================================///
+# ///=========================================================================Global Functions================================================================================///
 
 
 # ping requests need two enter commands
@@ -46,7 +46,7 @@ def gift_all(dct):
 
 
 # Only 1/3 chance of catching
-# click() -> This is too hopefully catch collectables etc if they appear in mini-game
+# click() -> This is too hopefully catch collectable items if they appear in mini-game
 
 
 def click():
@@ -54,7 +54,7 @@ def click():
     time.sleep(2)
 
 
-# gamble_search() -> To click the higher, lower, jackpot and other search item buttons
+# gamble_search() -> To click the higher, lower, jackpot buttons and other 'pls search' item buttons
 
 
 def gamble_search(x):
@@ -66,7 +66,7 @@ def gamble_search(x):
         time.sleep(12)
 
 
-# ///==========================================Program Start Point==================================================///
+# ///========================================================================Program Start Point==============================================================================///
 
 
 for j in range(2):
