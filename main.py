@@ -28,7 +28,7 @@ item_dict = {'ant': 1, 'apple': 1, 'boar': 1, 'candy': 1, 'coin': 1,
 
 
 # ping requests need two enter commands
-def ping_click():
+def ping():
 
     for _ in range(2):
         pg.press("enter")
@@ -39,7 +39,7 @@ def gift_all(dct):
 
     for item, quantity in dct.items():
         pg.typewrite(f'pls gift {quantity} {item} @Abid')
-        ping_click()
+        ping()
         time.sleep(20)
 
 
@@ -79,7 +79,7 @@ for j in range(2):
     for ping in ping_cmnds:
         pg.typewrite(ping)
         # We press enter twice, once to activate the ping in box and once to send the command
-        ping_click()
+        ping()
         time.sleep(3)
 
     gamble_search(c_wrk)
