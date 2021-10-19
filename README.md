@@ -8,7 +8,7 @@ This program is automated to farm you dank memer resources! check out my [YouTub
 
 ## Step 2:
 
-- Go to your terminal/command prompt/command line and type in `pip install pyautogui Pillow`.
+- Go to your terminal/command prompt/command line and type in `pip install pyautogui Pillow`. Then do, `pip install playsound`
 
 **And now you're done!**
 
