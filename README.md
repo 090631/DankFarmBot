@@ -12,5 +12,5 @@ This program is automated to farm you dank memer resources! check out my [YouTub
 
 **And now you're done!**
 
-> Simply run the main.py file, and switch to a private server. Keep in mind to use a private server, as using a public server could have several serious bugs with the 'pls search' clicker. If thing go wrong and you need to stop the program, go to the window where you are running the program, go to the terminal and `press control+c`. THis should stop the program immediately.
+> Simply run the main.py file, and switch to a private server. Keep in mind to use a private server, as using a public server could have several serious bugs with the 'pls search' clicker. If thing go wrong and you need to stop the program, go to the window where you are running the program, go to the terminal and `press control+c` or move your cursor to the bottom right corner and wait 1s. This should stop the program immediately.
 
