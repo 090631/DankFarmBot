@@ -78,7 +78,7 @@ for j in range(2):
         pg.typewrite(work)
         pg.press("enter")
         time.sleep(3)
-        pg.click(x=480, y=675)
+        click()
         time.sleep(random.randint(1,3))
 
     for ping in ping_cmnds:
