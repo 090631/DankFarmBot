@@ -31,7 +31,7 @@ item_dict = {'ant': 1, 'apple': 1, 'boar': 1, 'candy': 1, 'coin': 1,
 # ping requests need two enter commands
 
 
-def ping():
+def ping_click():
     for _ in range(2):
         pg.press("enter")
 
@@ -83,7 +83,7 @@ for j in range(2):
 
     for ping in ping_cmnds:
         pg.typewrite(ping)
-        ping()
+        ping_click()
         time.sleep(random.randint(1,3))
 
     gamble_search(c_wrk)
