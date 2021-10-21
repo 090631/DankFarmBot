@@ -42,7 +42,7 @@ def ping_click():
 def gift_all(dct):
     for item, quantity in dct.items():
         pg.typewrite(f'pls gift {quantity} {item} @Abid')
-        ping()
+        ping_click()
         time.sleep(random.randint(18,24))
 
 
